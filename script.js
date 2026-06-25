@@ -90,3 +90,4 @@ setInterval(createHeart,500);
 /* INIT */
 
 showPage(0);
+console.log("JS Loaded");
