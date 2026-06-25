@@ -1,14 +1,86 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Birthday Surprise</title>
-<link rel="stylesheet" href="style.css"></head>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Bbe ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-<div class="card">
-<h1>🎂 Birthday Surprise For Bbe ❤️</h1>
-<p>GitHub-ready starter project.</p>
-<p>Put your background song in <b>music/song.mp3</b> and voice note in <b>music/voice-note.mp3</b>.</p>
-<button onclick="startMusic()">Start ❤️</button>
-<button onclick="playVoice()">🎙️ Play Voice Note</button>
-</div>
-<script src="script.js"></script>
-</body></html>
+
+<audio id="bgMusic" loop>
+    <source src="song.mp3" type="audio/mp3">
+</audio>
+
+<audio id="voiceNote">
+    <source src="voice-note.mp3" type="audio/mp3">
+</audio>
+
+<div class="hearts"></div>
+
+<!-- PAGE 1 -->
+
+<section class="page active" id="page1">
+
+<h1 class="title">
+Hey Bbe ❤️
+</h1>
+
+<p class="text">
+I made something special for u 🥺
+</p>
+
+<button class="btn" onclick="startWebsite()">
+Open My Surprise ❤️
+</button>
+
+</section>
+
+<!-- PAGE 2 -->
+
+<section class="page" id="page2">
+
+<h1 class="birthday">
+🎂 HAPPY BIRTHDAY BABEEEE 🎂
+</h1>
+
+<p class="wish">
+Aaj ka din sirf tumhara hai ❤️
+</p>
+
+<img
+class="gif"
+src="https://media.tenor.com/JhR6f5N4lJAAAAAC/cute-bear.gif"
+>
+
+<button class="btn" onclick="nextPage()">
+Next ❤️
+</button>
+
+</section>
+
+<!-- PAGE 3 -->
+
+<section class="page" id="page3">
+
+<h1 class="title">
+🎙️ A Voice Message For U
+</h1>
+
+<p class="text">
+Psst...
+I recorded something for u, bbe 🥺❤️
+</p>
+
+<button class="btn" onclick="playVoiceNote()">
+Play Voice Note 🎙️
+</button>
+
+<button class="btn" onclick="nextPage()">
+Continue ❤️
+</button>
+
+</section>
